@@ -16,7 +16,7 @@ if ($page != false) {
         if ($category == 'list') {            
             $jobs->index();
         } else if($category == false) {            
-            echo '404 that route not exist';
+            echo '404 route not exist';
         } else {            
             $jobs->show($category);
         }
@@ -28,25 +28,25 @@ if ($page != false) {
                 break;
             case 'review' :
                 if ($candidatId == false) {
-                   echo '404 that route not exist';
+                   echo '404 route not exist';
                    break;
                 }
                 $candidates->show($candidatId);
                 break;
             case 'search' :
                 if ($candidatId == false) {
-                   echo '404 that route not exist';
+                   echo '404 route not exist';
                    break;
                 }
                 $candidates->search($candidatId);
                 break;
             default :
-                echo '404 that route not exist';
+                echo '404 route not exist';
                 break;
         }       
         
     } else {
-        echo '404 that route not exist';
+        echo '404 route not exist';
     }
 }
 
