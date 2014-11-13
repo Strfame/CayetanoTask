@@ -3,7 +3,6 @@
 include 'classes/Url.php';
 include 'classes/Job.php';
 include 'classes/Candidate.php';
-include 'classes/DBconnect.php';
 
 $url = new url('/CayetanoTask');
 
